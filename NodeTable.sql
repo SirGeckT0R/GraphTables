@@ -30,25 +30,25 @@ GO
 
 INSERT INTO Owner (id,name)
 VALUES      (1,
-             N'РќРёРєРёС‚Р°'),
+             N'Никита'),
             ( 2,
-              N'РђРЅС‚РѕРЅ' ),
+              N'Антон' ),
             ( 3,
-              N'Р”Р°РЅРёРёР»' ),
+              N'Даниил' ),
             ( 4,
-              N'РћР»РµРі' ),
+              N'Олег' ),
             ( 5,
-              N'РњР°С€СѓРєР°' ),
+              N'Машука' ),
             ( 6,
-              N'Р’РµРґСЊРјР°' ),
+              N'Ведьма' ),
             ( 7,
-              N'РџС‘С‚СЂ' ),
+              N'Пётр' ),
             ( 8,
-              N'РЎР°РЅСЏ' ),
+              N'Саня' ),
             ( 9,
-              N'РђР»СЊР±РµСЂС‚' ),
+              N'Альберт' ),
             ( 10,
-              N'РџР°РґСЂРµ' );
+              N'Падре' );
 GO
 
 --SELECT *
@@ -56,35 +56,35 @@ GO
 
 INSERT INTO City (id,NAME,region)
 VALUES      ( 1,
-              N'РњРёРЅСЃРє',
-              N'РњРёРЅСЃРєР°СЏ' ),
+              N'Минск',
+              N'Минская' ),
             ( 2,
-              N'Р‘РѕСЂРёСЃРѕРІ',
-              N'РњРёРЅСЃРєР°СЏ' ),
+              N'Борисов',
+              N'Минская' ),
             ( 3,
-              N'Р“РѕРјРµР»СЊ',
-              N'Р“РѕРјРµР»СЊСЃРєР°СЏ ' ),
+              N'Гомель',
+              N'Гомельская ' ),
             ( 4,
-              N'Р‘СЂРµСЃС‚',
-              N'Р‘СЂРµСЃС‚СЃРєР°СЏ' ),
+              N'Брест',
+              N'Брестская' ),
             ( 5,
-              N'Р“СЂРѕРґРЅРѕ',
-              N'Р“СЂРѕРґРЅРµРЅСЃРєР°СЏ' ),
+              N'Гродно',
+              N'Гродненская' ),
             ( 6,
-              N'РџРѕР»РѕС†Рє',
-              N'Р’РёС‚РµР±СЃРєР°СЏ' ),
+              N'Полоцк',
+              N'Витебская' ),
             ( 7,
-              N'РљР°Р»РёРЅРєРѕРІРёС‡Рё',
-              N'Р“РѕРјРµР»СЊСЃРєР°СЏ' ),
+              N'Калинковичи',
+              N'Гомельская' ),
             ( 8,
-              N'РЎРІРµС‚Р»РѕРіРѕСЂСЃРє',
-              N'Р“РѕРјРµР»СЊСЃРєР°СЏ' ),
+              N'Светлогорск',
+              N'Гомельская' ),
             ( 9,
-              N'РќРѕРІРѕРїРѕР»РѕС†Рє',
-              N'Р’РёС‚РµР±СЃРєР°СЏ' ),
+              N'Новополоцк',
+              N'Витебская' ),
             ( 10,
-              N'РЎРѕР»РёРіРѕСЂСЃРє',
-              N'РњРёРЅСЃРєР°СЏ' );
+              N'Солигорск',
+              N'Минская' );
 GO
 
 --SELECT *
@@ -93,37 +93,37 @@ GO
 INSERT INTO Cinema (id,NAME,city)
 VALUES     ( 1,
               N'Skyline',
-              N'РњРёРЅСЃРє' ),
+              N'Минск' ),
             ( 2,
-              N'РњРёСЂ',
-              N'Р‘РѕСЂРёСЃРѕРІ' ),
+              N'Мир',
+              N'Борисов' ),
             ( 3,
-              N'РћРєС‚СЏР±СЂСЊ',
-              N'Р“РѕРјРµР»СЊ' ),
+              N'Октябрь',
+              N'Гомель' ),
             ( 4,
-              N'РњР°Р»Р°РґРѕСЃС†СЊ',
-              N'Р‘СЂРµСЃС‚' ),
+              N'Маладосць',
+              N'Брест' ),
             ( 5,
-              N'Р‘РµР»Р°СЂСѓСЃСЊ',
-              N'РњРёРЅСЃРє' ),
+              N'Беларусь',
+              N'Минск' ),
             ( 6,
-              N'Р—РѕСЂРєР° Р’РµРЅРµСЂР°',
-              N'РЎРѕР»РёРіРѕСЂСЃРє' ),
+              N'Зорка Венера',
+              N'Солигорск' ),
             ( 7,
-              N'Р РѕРґРёРЅР°',
-              N'РџРѕР»РѕС†Рє' ),
+              N'Родина',
+              N'Полоцк' ),
             ( 8,
-              N'РљРёРЅРѕС‚РµР°С‚СЂ РњРёРЅСЃРє',
-              N'РќРѕРІРѕРїРѕР»РѕС†Рє' ),
+              N'Кинотеатр Минск',
+              N'Новополоцк' ),
             ( 9,
-              N'РЎРїСѓС‚РЅРёРє',
-              N'РЎРІРµС‚Р»РѕРіРѕСЂСЃРє' ),
+              N'Спутник',
+              N'Светлогорск' ),
             ( 10,
-              N'Р“Р°СЃС‚РµР»Р»Рѕ',
-              N'Р“СЂРѕРґРЅРѕ' ),
+              N'Гастелло',
+              N'Гродно' ),
 			  ( 11,
-              N'Р—РЅР°РјСЏ',
-              N'РљР°Р»РёРЅРєРѕРІРёС‡Рё' );
+              N'Знамя',
+              N'Калинковичи' );
 GO
 --SELECT *
 --FROM Cinema;
@@ -477,7 +477,85 @@ VALUES (
 		FROM City
 		WHERE ID = 4
 		)
-	);
+	),(
+	(
+		SELECT $NODE_ID
+		FROM Cinema
+		WHERE ID = 5
+		)
+	,(
+		SELECT $NODE_ID
+		FROM City
+		WHERE ID = 1
+		)
+	),(
+	(
+		SELECT $NODE_ID
+		FROM Cinema
+		WHERE ID = 6
+		)
+	,(
+		SELECT $NODE_ID
+		FROM City
+		WHERE ID =10
+		)
+	),(
+	(
+		SELECT $NODE_ID
+		FROM Cinema
+		WHERE ID = 7
+		)
+	,(
+		SELECT $NODE_ID
+		FROM City
+		WHERE ID = 6
+		)
+	),(
+	(
+		SELECT $NODE_ID
+		FROM Cinema
+		WHERE ID = 8
+		)
+	,(
+		SELECT $NODE_ID
+		FROM City
+		WHERE ID = 9
+		)
+	),(
+	(
+		SELECT $NODE_ID
+		FROM Cinema
+		WHERE ID = 9
+		)
+	,(
+		SELECT $NODE_ID
+		FROM City
+		WHERE ID = 8
+		)
+	),(
+	(
+		SELECT $NODE_ID
+		FROM Cinema
+		WHERE ID = 10
+		)
+	,(
+		SELECT $NODE_ID
+		FROM City
+		WHERE ID = 5
+		)
+	),(
+	(
+		SELECT $NODE_ID
+		FROM Cinema
+		WHERE ID = 11
+		)
+	,(
+		SELECT $NODE_ID
+		FROM City
+		WHERE ID = 7
+		)
+	)
+	;
 GO
 
 INSERT INTO OwnerOf (
@@ -666,7 +744,7 @@ VALUES (
 GO
 
 Select *
-from OwnerOf
+from LocatedIn
 
 SELECT Owner1.name
 	,Owner2.name AS [Partner name]
@@ -674,7 +752,7 @@ FROM Owner AS Owner1
 	,PartnerOf
 	,Owner AS Owner2
 WHERE MATCH(Owner1 - (PartnerOf) - > Owner2)
-	AND Owner1.name = N'РђРЅС‚РѕРЅ';
+	AND Owner1.name = N'Антон';
 
 SELECT Owner1.name
 	,Cinema.name AS Property
@@ -682,17 +760,17 @@ FROM Owner AS Owner1
 	,OwnerOf
 	,Cinema AS Cinema
 WHERE MATCH(Cinema < - (OwnerOf) - Owner1)
-	AND Owner1.name = N'Р”Р°РЅРёРёР»';
+	AND Owner1.name = N'Даниил';
 
-SELECT Owner1.name + N' РЎРѕС‚СЂСѓРґРЅРёС‡Р°РµС‚ СЃ ' + Owner2.name AS Level1
-	,Owner2.name + N' РЎРѕС‚СЂСѓРґРЅРёС‡Р°РµС‚ СЃ ' + Owner3.name AS Level2
+SELECT Owner1.name + N' Сотрудничает с ' + Owner2.name AS Level1
+	,Owner2.name + N' Сотрудничает с ' + Owner3.name AS Level2
 FROM Owner AS Owner1
 	,PartnerOf AS partner1
 	,Owner AS Owner2
 	,PartnerOf AS partner2
 	,Owner AS Owner3
 WHERE MATCH(Owner1 - (partner1) - > Owner2 - (partner2) - > Owner3)
-	AND Owner1.name = N'РђРЅС‚РѕРЅ';
+	AND Owner1.name = N'Антон';
 
 SELECT Owner2.name AS Owner
 	,Cinema.name AS Cinema
@@ -703,7 +781,7 @@ FROM Owner AS Owner1
 	,PartnerOf
 	,Cinema
 WHERE MATCH(Owner1 - (PartnerOf) - > Owner2 - (OwnerOf) - > Cinema)
-	AND Owner1.name = N'Р”Р°РЅРёРёР»';
+	AND Owner1.name = N'Даниил';
 
 SELECT Owner3.name AS Owner
 	,Cinema.name AS Cinema
@@ -716,7 +794,7 @@ FROM Owner AS Owner1
 	,PartnerOf AS PartnerOf2
 	,Cinema
 WHERE MATCH(Owner1 - (PartnerOf1) - > Owner2 - (PartnerOf2) - > Owner3 - (OwnerOf) - > Cinema)
-	AND Owner1.name = N'РќРёРєРёС‚Р°';
+	AND Owner1.name = N'Никита';
 
 SELECT Owner1.name AS OwnerName
 	,STRING_AGG(Owner2.name, '->') WITHIN
@@ -727,7 +805,7 @@ FOR PATH AS fo
 	,Owner
 FOR PATH AS Owner2
 WHERE MATCH(SHORTEST_PATH(Owner1(- (fo) - > Owner2) +))
-	AND Owner1.name = N'РђРЅС‚РѕРЅ';
+	AND Owner1.name = N'Антон';
 
 SELECT Owner1.name AS OwnerName
 	,STRING_AGG(Owner2.name, '->') WITHIN
@@ -738,4 +816,4 @@ FOR PATH AS fo
 	,Owner
 FOR PATH AS Owner2
 WHERE MATCH(SHORTEST_PATH(Owner1(- (fo) - > Owner2) {1,3}))
-	AND Owner1.name = N'РђРЅС‚РѕРЅ';
+	AND Owner1.name = N'Антон';
