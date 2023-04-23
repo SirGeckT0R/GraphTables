@@ -743,8 +743,8 @@ VALUES (
 	;
 GO
 
-Select *
-from LocatedIn
+--Select *
+--from LocatedIn
 
 SELECT Owner1.name
 	,Owner2.name AS [Partner name]
@@ -752,7 +752,7 @@ FROM Owner AS Owner1
 	,PartnerOf
 	,Owner AS Owner2
 WHERE MATCH(Owner1 - (PartnerOf) - > Owner2)
-	AND Owner1.name = N'Антон';
+	AND Owner1.name = N'Даниил';
 
 SELECT Owner1.name
 	,Cinema.name AS Property
@@ -760,7 +760,7 @@ FROM Owner AS Owner1
 	,OwnerOf
 	,Cinema AS Cinema
 WHERE MATCH(Cinema < - (OwnerOf) - Owner1)
-	AND Owner1.name = N'Даниил';
+	AND Owner1.name = N'Альберт';
 
 SELECT Owner1.name + N' Сотрудничает с ' + Owner2.name AS Level1
 	,Owner2.name + N' Сотрудничает с ' + Owner3.name AS Level2
@@ -793,8 +793,10 @@ FROM Owner AS Owner1
 	,PartnerOf AS PartnerOf1
 	,PartnerOf AS PartnerOf2
 	,Cinema
-WHERE MATCH(Owner1 - (PartnerOf1) - > Owner2 - (PartnerOf2) - > Owner3 - (OwnerOf) - > Cinema)
-	AND Owner1.name = N'Никита';
+	,LocatedIn
+	,City
+	,LivesIn
+WHERE MATCH(Owner1 - (PartnerOf1) - > Owner2 - (PartnerOf2) - > Owner3 - (OwnerOf) - > Cinema-(LocatedIn)->City<-(LivesIn)-Owner1)
 
 SELECT Owner1.name AS OwnerName
 	,STRING_AGG(Owner2.name, '->') WITHIN
